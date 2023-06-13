@@ -27,11 +27,18 @@ public class View {
     public void runFour() {
         System.out.println("Enter a string: ");
         String str = scanner.next();
+        String newstr = Metody.stringReverse(str);
+        System.out.println(newstr);
+    }
+
+    public void runFive() {
+        System.out.println("Enter a string: ");
+        String str = scanner.next();
         boolean result = Metody.isPalindrome(str);
         System.out.println("Is the string a palindrome? " + result);
     }
 
-    public void runFive() {
+    public void runSix() {
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
         Metody.playGuessingGame(words, random, scanner);
     }
